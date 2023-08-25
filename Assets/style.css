@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    color: white;
+}
+html{
+    width: 100%;
+    font-size: 62.5%;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    max-width: 100vw;
+    height: 100vh;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    min-width: 340px;
+}
+.navigation_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #157293;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem;
+    background: #157293;
+    max-height: 5rem;
+    width: 100vh;
+    align-items: center;
+}
+.navbar_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-height: 5rem;
+}
+.navbar_link a{
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem; 
+}
+.link {
+    text-decoration: none;
+}
+.hide {
+    display: none;
+    width: 94%;
+    top: 3rem;
+    padding-top: 0;
+    width: fit-content;
+    background-color: #157293;
+    margin: 40px;
+
+}
+nav h1{
+    margin: 1rem;
+    color: white;
+    font-size: 3rem
+}
+.hamburger {
+    cursor: pointer;
+    margin: 1rem 2rem;
+}
+.hamburger .line {
+    display: block; 
+    width: 3rem;
+    height: .3rem;
+    margin: 1rem; 
+    background-color: white;
+}
+.temitope_welcome{
+    margin: 3rem;
+    width: fit-content;
+    
+
+}
+.temitope_welcome h1 {
+    color: rgb(57, 118, 139);
+    font-size: 5rem;
+}
+.temitope_welcome p {
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    justify-content: space-between;
+    color: rgb(59, 55, 55);
+}
+.temitope_welcome img {
+    padding: 3rem;
+    width: 100%;
+    justify-content: center;
+}
+#section2 {
+    display: block;
+    width: 100%;
+    background-color: rgba(59, 55, 55, 0.1);
+}
+#section2 div{
+    padding: 1rem 2rem;
+    width: 100%;
+}
+#section2 .design {
+    display: block;
+}
+#section2 .design h2{
+    font-size: 3rem;
+    margin: 1rem 2rem;
+    color: #157293;
+}
+#section2 button{
+    border: none;
+    background-color: #157293;
+    color: white;
+    font-size: 2rem;
+    border-radius: .8rem;
+    width: 13rem;
+    height: 5rem;
+    margin: 3rem;
+
+}
+button:hover{
+    opacity: 0.8;
+    background-color: #4797ab;
+    color: black;
+}
+#section2 div img{
+    width: 85%;
+    margin: 1rem 2rem;
+    border-radius: 7%;
+}
+.section3-wrapper{
+    background-color: #4797ab;
+    padding: 1rem 2rem;
+    padding-bottom: 4rem;
+    color: white;
+    font-size: 2.3rem;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.section3-item-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+
+}
+.items3{
+    width: 40%;
+}
+.items3 .contact{
+    width: 17rem;
+    height: 7rem;
+    border-radius: .8rem;
+    color: rgb(57, 118, 139);
+    font-size: 2rem;
+    border: none;
+    margin-right: 6rem
+}
+.items3 .tel {
+    width: 17rem;
+    height: 7rem;
+    border-radius: .8rem;
+    color: white;
+    background-color: #157293;
+    font-size: 3rem;
+    border: none;
+    margin-left: 5rem;
+}
+.section3-item-container a {
+    text-decoration: none;
+}
+p.call_me::before{
+    content: url(/Assets/call_logo.png);
+
+}
+footer {
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+    background-color: #157293;
+    color: white;
+}
+.footer_prompt {
+    padding: 20px;
+}
+.footer_prompt h3 {
+    padding: 15px;
+    font-size: 2rem;
+}
+.footer_icons a img {
+    padding: .1rem;
+    margin-bottom: 5rem;
+    width: 3.8rem;
+    height: 3.8rem;
+}
+.footer_icons a img:hover {
+    width: 4rem;
+    height: 4rem;
+}
+h2.email a {
+    text-decoration: none;
+    color: white;
+}
+p.email a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+.footer_copyright{
+    font-size: 1.5rem;
+}
+div.email :hover{
+    cursor: pointer;
+}
+@media screen and (min-width :768px ) {
+    .hamburger{
+        display: none;
+    }
+    .temi_welcome p {
+        font-size: 4rem;
+        font-weight: 400;
+    }
+    .temitope_welcome h1 {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+    .temitope_welcome img {
+        width: 50vh;
+    }
+    #section2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 25px;
+        padding-top: 30px;
+    } 
+    #section2 div{
+        width: 45%;
+        border: 1px solid none;
+        border-radius: 7%;
+    }
+    #section2 button {
+        float: right;
+
+    }
+    .section3-wrapper    {
+        display: block;
+        background-repeat: no-repeat !important;
+    }
+    .navbar_link a{
+        font-size: 1.5rem;
+    }
+    .hide{
+        display: flex;
+    }
+    /* .section3-item-container {
+        width: 40%;
+        display: flex;
+        margin: 4rem;
+        margin-right: 5rem;
+    } */
+}
+@media screen and (min-width :1024px ) {
+    .hamburger{
+        display: none;
+    }
+    .navbar__link {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px auto;
+        margin: 0px auto;
+    
+    }
+    .temi_welcome {
+       display: flex;
+       align-items: center;
+    }
+    #section2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0px 0px 0px;
+        padding: 50px 50px 50px 50px;
+        justify-content: space-between;
+    } 
+    #section2 div{
+        width: 30%;
+        border: 1px solid none;
+        border-radius: 7%;
+    }
+    #section2 button {
+        float: right;
+    }
+    #section2 div.design {
+        width: 45%;
+    }
+    .section3-wrapper {
+        display: flex;
+        background-image: url(/Assets/background-section.png);
+        background-size: cover;
+        background-repeat: no-repeat !important;
+        width: 100%;
+    }
+    .temi_welcome{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .connect {
+        width: 60%;
+    }
+    .section3-item-container {
+        width: 40%;
+        display: flex;
+        margin-right: 5rem;
+    }
+    .temi_welcome div {
+        width: 40%;
+        padding: 60px;
+    }
+}
